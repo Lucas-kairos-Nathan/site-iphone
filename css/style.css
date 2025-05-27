@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --cor_01: #06c;
+    --cor_02: #000;
+    --cor_03: #ccc;
+    --cor_04: #fff;
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    background-color: var(--cor_02);
+    margin-bottom: 30px;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+} 
+
+#menu .submenu {
+    background-color:var(--cor_02) ;
+    display: none;
+    position: absolute;
+    z-index:1;
+}
+
+#menu ul li a{
+    color: var(--cor_04);
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    transition:all.3s linear;
+}
+#menu ul li a:hover {
+    background-color: var(--cor_01);
+}
+#menu  ul li :hover.submenu{
+    display: block;
+}
+
+#historia p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#fotos #galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap:5px;
+}
+
+#fotos #galeria #img{
+    display: block;
+    width: 100%;
+    transition:all 0.7s linear;
+}
+
+#fotos #galeria #img:hover {
+    transform : scale(1.8);
+}
+#videos #galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+
+#rodape{
+    background-color: var(--cor_02);
+    color: var(--cor_04);
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+}
+#rodape a{
+    color: var(--cor_04);
+    text-decoration: nome;
+}
+#rodape a:hover{
+    text-decoration: underline;
+}
